@@ -1,0 +1,15 @@
+<div [dir]='ui_direction'>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+  <app-logout *ngIf='(Show_Logout$ | async)' style='position:fixed;bottom:20px;right:20px'>
+  </app-logout>
+</div>
+<!-- <router-outlet></router-outlet> -->
+
+<!-- <app-login></app-login> -->
+
+<!-- 
+<app-confinement></app-confinement> -->
+<!-- <app-patient></app-patient> -->
+<!-- <app-visitors></app-visitors> -->
